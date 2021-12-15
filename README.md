@@ -1,4 +1,4 @@
-# _{Application name here}_
+# _Sudoku Checker_
 
 #### By _**Patrick Dolan, Wajma Niazi, and Phil Curran**_
 
