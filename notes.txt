@@ -1,0 +1,150 @@
+let Sudoku = [
+    [5, 3, 0, 0, 7, 0, 0, 0, 0],
+    [6, 0, 0, 1, 9, 5, 0, 0, 0],
+    [0, 9, 8, 0, 0, 0, 0, 6, 0],
+    [8, 0 ,0, 0, 6, 0, 0, 0, 3],
+    [4, 0, 0, 8, 0, 3, 0, 0, 1],
+    [7, 0, 0, 0, 2, 0, 0, 0, 6], 
+    [0, 6, 0, 0, 0, 0, 2, 8, 0], 
+    [0 ,0, 0, 4, 1, 9, 0, 0, 5], 
+    [0, 0, 0, 0, 8, 0, 0, 7, 9] 
+  ];
+
+let totalGrid = [
+  [5, 3, 0, 0, 7, 0, 0, 0, 0],
+  [6, 0, 0, 1, 9, 5, 0, 0, 0],
+  [0, 9, 8, 0, 0, 0, 0, 6, 0],
+  [8, 0 ,0, 0, 6, 0, 0, 0, 3],
+  [4, 0, 0, 8, 0, 3, 0, 0, 1],
+  [7, 0, 0, 0, 2, 0, 0, 0, 6], 
+  [0, 6, 0, 0, 0, 0, 2, 8, 0], 
+  [0 ,0, 0, 4, 1, 9, 0, 0, 5], 
+  [0, 0, 0, 0, 8, 0, 0, 7, 9] 
+];
+
+console.log(totalGrid);
+
+let row1 = totalGrid[0];
+let row2 = totalGrid[1];
+let row3 = totalGrid[2];
+let row4 = totalGrid[3];
+let row5 = totalGrid[4];
+let row6 = totalGrid[5];
+let row7 = totalGrid[6];
+let row8 = totalGrid[7];
+let row9 = totalGrid[8];
+
+let column1 = [
+  totalGrid[0][0], 
+  totalGrid[1][0], 
+  totalGrid[2][0], 
+  totalGrid[3][0], 
+  totalGrid[4][0], 
+  totalGrid[5][0], 
+  totalGrid[6][0], 
+  totalGrid[7][0], 
+  totalGrid[8][0]
+];
+
+let column2 = [
+  totalGrid[0][1], 
+  totalGrid[1][1], 
+  totalGrid[2][1], 
+  totalGrid[3][1], 
+  totalGrid[4][1], 
+  totalGrid[5][1], 
+  totalGrid[6][1], 
+  totalGrid[7][1], 
+  totalGrid[8][1]
+];
+
+let column3 = [
+  totalGrid[0][2], 
+  totalGrid[1][2], 
+  totalGrid[2][2], 
+  totalGrid[3][2], 
+  totalGrid[4][2], 
+  totalGrid[5][2], 
+  totalGrid[6][2], 
+  totalGrid[7][2], 
+  totalGrid[8][2]
+];
+
+let column4 = [
+  totalGrid[0][3], 
+  totalGrid[1][3], 
+  totalGrid[2][3], 
+  totalGrid[3][3], 
+  totalGrid[4][3], 
+  totalGrid[5][3], 
+  totalGrid[6][3], 
+  totalGrid[7][3], 
+  totalGrid[8][3]
+];
+
+let column5 = [
+  totalGrid[0][4], 
+  totalGrid[1][4], 
+  totalGrid[2][4], 
+  totalGrid[3][4], 
+  totalGrid[4][4], 
+  totalGrid[5][4], 
+  totalGrid[6][4], 
+  totalGrid[7][4], 
+  totalGrid[8][4]
+];
+
+let column6 = [
+  totalGrid[0][5], 
+  totalGrid[1][5], 
+  totalGrid[2][5], 
+  totalGrid[3][5], 
+  totalGrid[4][5], 
+  totalGrid[5][5], 
+  totalGrid[6][5], 
+  totalGrid[7][5], 
+  totalGrid[8][5]
+];
+
+let column7 = [
+  totalGrid[0][6], 
+  totalGrid[1][6], 
+  totalGrid[2][6], 
+  totalGrid[3][6], 
+  totalGrid[4][6], 
+  totalGrid[5][6], 
+  totalGrid[6][6], 
+  totalGrid[7][6], 
+  totalGrid[8][6]
+];
+
+let column8 = [
+  totalGrid[0][7], 
+  totalGrid[1][7], 
+  totalGrid[2][7], 
+  totalGrid[3][7], 
+  totalGrid[4][7], 
+  totalGrid[5][7], 
+  totalGrid[6][7], 
+  totalGrid[7][7], 
+  totalGrid[8][7]
+];
+
+let column9 = [
+  totalGrid[0][8], 
+  totalGrid[1][8], 
+  totalGrid[2][8], 
+  totalGrid[3][8], 
+  totalGrid[4][8], 
+  totalGrid[5][8], 
+  totalGrid[6][8], 
+  totalGrid[7][8], 
+  totalGrid[8][8]
+];
+
+let grid1 = [
+  row1[0], row1[1], row1[2],
+  row2[0], row2[1], row2[2],
+  row3[0], row3[1], row3[2]
+];
+
