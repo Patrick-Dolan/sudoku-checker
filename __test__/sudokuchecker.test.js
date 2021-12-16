@@ -16,17 +16,18 @@ describe("Sudoku", () => {
   //   sudoku.repeatNumberRow(); 
   //   expect(sudoku.rows[0]).toBe(false);
   // });
-  test("should correctly create a grid of 3x3", () => {
-    sudoku.addGrids();
-    expect(sudoku.grids[0]).toEqual([5, 3, 0, 6, 0, 0, 0, 9, 8]);
-  });
+  
   test("should transform first three rows into three 3x3 grids and return first grid", () => {
     sudoku.addGrids();
     expect(sudoku.grids[0]).toEqual([5, 3, 0, 6, 0, 0, 0, 9, 8]);
   });
   test("should transform first three rows into three 3x3 grids and return second grid", () => {
     sudoku.addGrids();
-    expect(sudoku.grids[1]).toEqual([0, 7, 0, 1, 9, 5, 0, 0, 0]);
+    expect(sudoku.grids[1]).toEqual([0, 7, 0, 9, 5, 0, 0, 0, 0]);
+  });
+  test("should transform first three rows into three 3x3 grids and return second grid", () => {
+    sudoku.addGrids();
+    expect(sudoku.grids[2]).toEqual([8, 0, 0, 4, 0, 0, 7, 0, 0]);
   });
   // test("should transform first three rows into three 3x3 grids and return first grid", () => {
   //   sudoku.addGrids();

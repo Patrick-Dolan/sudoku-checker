@@ -30,25 +30,21 @@ Sudoku.prototype.addColumns = function() {
 };
 
 Sudoku.prototype.addGrids = function() {
-    let firstRows = [this.rows[0], this.rows[1], this.rows[2]];  // let firstRows = [this.rows[0], this.rows[1], this.rows[2]];
-  // let firstRows = [this.rows[0], this.rows[1], this.rows[2]];]];
-  let temp = [];
-
-  firstRows.fswo
-  for (var i = 0; i <= 2; i++) {
-    for (var j = 0; j <= 2; j++) {
-      temp.push(this.rows[i][j]);
+  let firstRows = [this.rows[0], this.rows[1], this.rows[2]];  
+  let secondRows = [this.rows[3], this.rows[4], this.rows[5]];
+  let thirdRows = [this.rows[6], this.rows[7], this.rows[8]];
+  let currentRow = [firstRows, secondRows, thirdRows];
+  
+  currentRow.forEach((block) => {
+    let temp = [];
+    for (var i = 0; i <= 2; i++) {
+      for (var j = 0; j <= 2; j++) {
+        temp.push(block[i][j]);
+      }
+    this.grids.push(temp); 
     }
-  }
-  this.grids.push(temp);
+  });
 };
-
-// let grid1 = [
-//   row1[0], row1[1], row1[2],
-//   row2[0], row2[1], row2[2],
-//   row3[0], row3[1], row3[2]
-// ];
-// ];
 
 // Wajma function for grids
 // function 3x3 (row, col, data)
