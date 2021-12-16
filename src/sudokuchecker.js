@@ -45,7 +45,6 @@ Sudoku.prototype.addGrids = function() {
     }
   });
 };
-
 // Wajma function for grids
 // function 3x3 (row, col, data)
 // let row = math.floor (row/3)*3 ; 
